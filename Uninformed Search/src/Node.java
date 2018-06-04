@@ -5,18 +5,17 @@ import java.util.ArrayList;
 
 public class Node { 
 	public String stationName;
-	Node leftChild;
-	Node rightChild;
 	private ArrayList<Node> children;
 	
 	//constructor
-	public Node(String stationName) {
-		
+	public Node(String stationName, Node children) {
+		this.stationName = stationName;
+		this.children = new ArrayList<>();
 	}
 	
 	//return a list of all connected nodes
 	public ArrayList<Node> getChildren(){
-		return null;
+		if()
 	}
 	
 	//used to set the children of a node
