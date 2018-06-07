@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -8,7 +7,7 @@ import java.util.Arrays;
 
 public class BFSRunner {
 	public static void main(String args[]){
-
+ 
         //Create our nodes
         Node NYC = new Node("New York City", null);
         Node CHI = new Node("Chicago", null);
