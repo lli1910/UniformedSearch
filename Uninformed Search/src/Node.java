@@ -23,7 +23,7 @@ public class Node {
 	
 	//used to set the children of a node
 	public void setChildren (ArrayList<Node> children) {
-		//?
+		this.children = children;
 	}
 	
 	//remove child node from a list of child nodes

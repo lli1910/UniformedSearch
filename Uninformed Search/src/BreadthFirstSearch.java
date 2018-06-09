@@ -22,7 +22,7 @@ public class BreadthFirstSearch {
 			System.out.println("Goal Node Found :)");
 			System.out.println(startNode);
 		}
-		
+	
 		Queue<Node> queue = new LinkedList<>();
 		ArrayList<Node> explored = new ArrayList<>();
 		queue.add(this.startNode);
@@ -33,13 +33,15 @@ public class BreadthFirstSearch {
 			//remove and return the first node in the queue
 			Node current = queue.remove();
 			if(current.equals(this.goalNode)) {
-				System.out.println(explored);
+				System.out.println("Explored: " + explored + "\nQueue: " + queue);
 				return true;
 			}
 			else {
+				//dead end
 				if(current.getChildren().isEmpty()){
 					return false;
 				}
+				//add to queue the children of the current node
 				else {
 					queue.addAll(current.getChildren());
 				}

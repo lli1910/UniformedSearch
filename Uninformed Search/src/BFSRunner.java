@@ -29,9 +29,9 @@ public class BFSRunner {
         SF.setChildren(new ArrayList<Node>(Arrays.asList(LA,DEN,CHI)));
 
         //Test our BreadthFirstSearch
-        AbstractSearch bfs = new BreadthFirstSearch(NYC, SD);
+        BreadthFirstSearch bfs = new BreadthFirstSearch(NYC, SD);
 
-        if(bfs.search())
+        if(bfs.compute())
             System.out.print("Path Found!");
         else
         {
